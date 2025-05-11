@@ -84,3 +84,45 @@ body {
   margin-right: 8px;
   color: #1877f2;
   }
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ccff;
+}
+
+.about-text {
+  flex: 1;
+  color: #003d80;
+}
+
+.about-text p {
+  margin-bottom: 12px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00ccff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cta-button i {
+  margin-right: 8px;
+}
