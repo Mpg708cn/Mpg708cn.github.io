@@ -80,3 +80,7 @@ body {
   text-decoration: underline;
   color: #004a99;
 }
+.contact a i {
+  margin-right: 8px;
+  color: #1877f2;
+  }
