@@ -48,3 +48,35 @@ body {
     opacity: 1;
   }
 }
+.contact {
+  background-color: #e6f0ff; /* bleu très clair */
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #0056b3; /* bleu moyen */
+}
+
+.contact p {
+  font-size: 18px;
+  color: #003d80; /* bleu foncé */
+  margin: 12px 0;
+}
+
+.contact a {
+  color: #0066cc; /* bleu clair mais lisible */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #004a99;
+}
