@@ -1,0 +1,47 @@
+
+body {
+  background-color: #0f0f0f;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.typewriter {
+  color: #00ccff;
+  font-size: 48px;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+  border-right: .15em solid #00ccff;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(7, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 8ch }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ccff; }
+}
+
+.binary {
+  margin-top: 20px;
+  color: #00ccff;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
