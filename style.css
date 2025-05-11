@@ -1,6 +1,9 @@
-
 body {
-  background-color: #0f0f0f;
+  background-image: url('goku-ultra-instinct.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   font-family: Arial, sans-serif;
 }
