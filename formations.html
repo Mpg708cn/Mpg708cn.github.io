@@ -33,5 +33,73 @@ tu<!DOCTYPE html>
   <p>Ce PDF explique plusieurs stratégies de trading basées sur l’analyse technique, fondamentale et comportementale.</p>
   <a href="strategie-trading.pdf" class="download-btn" download>Télécharger le PDF</a>
   </div>
+  <!-- Message et feu d'artifice -->
+<div id="celebration" style="display:none; text-align:center; padding: 20px;">
+  <canvas id="fireworks" width="300" height="200" style="margin-bottom: 20px;"></canvas>
+  <p id="congrats" style="font-weight:bold; font-size:18px; color:lime; white-space:pre-line;"></p>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('a.download-btn');
+  const message = `Félicitations pour votre PDF !
+
+Pour plus de formations (10€ à 20€), je te propose un PDF encore plus riche avec des vidéos pour bien comprendre.
+
+Contacte-moi pour plus d'infos !`;
+
+  buttons.forEach(button => {
+    button.addEventListener('click', e => {
+      e.preventDefault();
+      const canvas = document.getElementById('fireworks');
+      const ctx = canvas.getContext('2d');
+      const congrats = document.getElementById('congrats');
+      const celebration = document.getElementById('celebration');
+      celebration.style.display = 'block';
+
+      congrats.innerHTML = '';
+      let index = 0;
+      const typeWriter = setInterval(() => {
+        congrats.innerHTML += message.charAt(index);
+        index++;
+        if (index >= message.length) clearInterval(typeWriter);
+      }, 40);
+
+      // Feu d’artifice simple
+      ctx.clearRect(0, 0, 300, 200);
+      let particles = [];
+      for (let i = 0; i < 50; i++) {
+        particles.push({
+          x: 150,
+          y: 100,
+          dx: Math.random() * 4 - 2,
+          dy: Math.random() * 4 - 2,
+          radius: 2 + Math.random() * 2,
+          color: `hsl(${Math.random() * 360}, 100%, 50%)`
+        });
+      }
+
+      let frame = 0;
+      const animate = setInterval(() => {
+        ctx.fillStyle = 'rgba(0,0,0,0.1)';
+        ctx.fillRect(0, 0, 300, 200);
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = p.color;
+          ctx.fill();
+          p.x += p.dx;
+          p.y += p.dy;
+        });
+        frame++;
+        if (frame > 30) clearInterval(animate);
+      }, 50);
+
+      setTimeout(() => {
+        celebration.style.display = 'none';
+        window.location.href = button.href;
+      }, 9000);
+    });
+  });
+</script>
 </body>
 </html>
