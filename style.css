@@ -1,145 +1,77 @@
-debody {
-  background-image: url('goku-ultra-instinct.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/*/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero {
-  text-align: center;
-  margin-top: 100px;
+/* Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
 }
 
-.typewriter {
-  color: #00ccff;
-  font-size: 48px;
-  font-family: 'Courier New', monospace;
-  overflow: hidden;
-  border-right: .15em solid #00ccff;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 3s steps(7, end) forwards, blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 8ch }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00ccff; }
-}
-
-.binary {
-  margin-top: 20px;
-  color: #00ccff;
-  font-family: 'Courier New', monospace;
-  font-size: 18px;
-  opacity: 0;
-  animation: fadeIn 2s ease-in 3s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-.contact {
-  background-color: #e6f0ff; /* bleu très clair */
-  padding: 40px 20px;
-  border-radius: 12px;
-  max-width: 600px;
-  margin: 40px auto;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
-}
-
-.contact h2 {
-  font-size: 28px;
-  margin-bottom: 16px;
-  color: #0056b3; /* bleu moyen */
-}
-
-.contact p {
-  font-size: 18px;
-  color: #003d80; /* bleu foncé */
-  margin: 12px 0;
-}
-
-.contact a {
-  color: #0066cc; /* bleu clair mais lisible */
+a {
+  color: #00bcd4;
   text-decoration: none;
-  font-weight: bold;
+  transition: 0.3s ease;
 }
 
-.contact a:hover {
-  text-decoration: underline;
-  color: #004a99;
-}
-.contact a i {
-  margin-right: 8px;
-  color: #1877f2;
-  }
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: #f0f8ff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-wrap: wrap;
+a:hover {
+  color: #fff;
 }
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #00ccff;
+/* Sections */
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.about-text {
-  flex: 1;
-  color: #003d80;
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #121212, #1f1f1f);
 }
 
-.about-text p {
-  margin-bottom: 12px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.cta-button {
-  display: inline-block;
-  background-color: #00ccff;
-  color: white;
-  padding: 10px 16px;
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.btn:hover {
+  background: #0097a7;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
   margin-top: 10px;
 }
 
-.cta-button i {
-  margin-right: 8px;
-}
-.download-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #0d6efd;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #084298;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #121212;
+  color: #999;
+  font-size: 0.9rem;
+}￼Enter
