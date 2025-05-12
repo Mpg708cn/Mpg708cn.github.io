@@ -1,4 +1,4 @@
-body {
+debody {
   background-image: url('goku-ultra-instinct.jpg');
   background-size: cover;
   background-position: center;
@@ -139,4 +139,7 @@ body {
 
 .download-btn:hover {
   background-color: #084298;
+}
+body {
+  font-family: 'Poppins', sans-serif;
 }
